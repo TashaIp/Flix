@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,6 +47,7 @@
                                     <outlet property="PosterView" destination="OQE-5o-8cm" id="RVQ-bO-zMB"/>
                                     <outlet property="SynopsisLabel" destination="FgJ-YO-JzZ" id="0TK-8S-jrh"/>
                                     <outlet property="TitleLabel" destination="7NN-29-SsH" id="wDe-Qv-WeN"/>
+                                    <segue destination="Nig-yi-clz" kind="show" id="nju-sG-rnm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -58,6 +60,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="5xi-4z-CcO">
+            <objects>
+                <viewController id="Nig-yi-clz" customClass="MovieDetailsViewController" customModule="Flix2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iaF-HE-fiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kTa-gw-DpD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hlM-1y-xqW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3vx-dU-Xn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iIe-Ej-Qxm">
