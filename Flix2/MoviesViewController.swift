@@ -62,7 +62,7 @@ class MoviesViewController: UIViewController,UITableViewDataSource, UITableViewD
         //Pass  the selected movie  to the details view  controller
         let detailsViewController = segue.destination as! MovieDetailsViewController
         detailsViewController.movie = movie
-        tableView.deselectRow(at: <#T##IndexPath#>, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
     
